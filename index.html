@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebbuangis Tour - Viajes a Italia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Fondo blanco azulado */
+            color: #333;
+        }
+        header {
+            background-color: #0077b6; /* Azul oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            height: 80px;
+            margin: 0 10px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        header h1 span {
+            color: #ff7f50; /* Naranja coral para resaltar el nombre */
+        }
+        nav {
+            background-color: #ffffff; /* Blanco */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #0077b6; /* Azul oscuro */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ff7f50; /* Naranja coral */
+        }
+        .destinos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .destino {
+            background-color: #ffffff; /* Blanco */
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .destino:hover {
+            transform: scale(1.05);
+            border-color: #ff7f50; /* Naranja coral */
+        }
+        .destino img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .destino h3 {
+            margin: 15px 0;
+            color: #0077b6; /* Azul oscuro */
+            font-size: 1.8rem;
+        }
+        .destino p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .destino button {
+            background-color: #ff7f50; /* Naranja coral */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .destino button:hover {
+            background-color: #ff6347; /* Naranja más oscuro */
+        }
+        .sobre-nosotros-button, .contacto-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .sobre-nosotros-button button, .contacto-button button {
+            background-color: #0077b6; /* Azul oscuro */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+        .sobre-nosotros-button button:hover, .contacto-button button:hover {
+            background-color: #005f8a; /* Azul más oscuro */
+        }
+        footer {
+            background-color: #0077b6; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .instagram-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .instagram-button img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="sebbuangis tour.png" alt="Logo 1">
+        <img src="image-removebg-preview.png" alt="Logo 2">
+        <h1><span>Sebbuangis</span> Tour</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section id="destinos" class="destinos">
+        <div class="destino">
+            <img src="https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg" alt="Roma">
+            <h3>Roma</h3>
+            <p>
+                Roma, la Ciudad Eterna, es un destino lleno de historia y cultura. Visita el Coliseo, el Foro Romano y el Vaticano, donde podrás admirar la Capilla Sixtina y la Basílica de San Pedro. Disfruta de la auténtica pasta carbonara y el gelato italiano mientras paseas por sus encantadoras calles.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploRoma'">Ver Paquete</button>
+        </div>
+        <div class="destino">
+            <img src="https://tourismmedia.italia.it/is/image/mitur/20210324173545-venezia-ponte-2?wid=1080&hei=660&fit=constrain,1&fmt=webp" alt="Venecia">
+            <h3>Venecia</h3>
+            <p>
+                Venecia, la ciudad de los canales, es un lugar mágico. Navega en góndola por el Gran Canal, visita la Plaza de San Marcos y el Puente de Rialto. No te pierdas el Carnaval de Venecia, una festividad llena de color y tradición.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploVenecia'">Ver Paquete</button>
+        </div>
+        <div class="destino">
+            <img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmxvcmVuY2lhfGVufDB8fDB8fHww" alt="Florencia">
+            <h3>Florencia</h3>
+            <p>
+                Florencia, la cuna del Renacimiento, es un paraíso para los amantes del arte. Admira el David de Miguel Ángel, visita la Galería Uffizi y cruza el Ponte Vecchio. Disfruta de la gastronomía toscana y los vinos locales.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploFlorencia'">Ver Paquete</button>
+        </div>
+        <div class="destino">
+            <img src="https://viajes.nationalgeographic.com.es/medio/2017/05/03/qpx-143261111_7c33b173.jpg" alt="Milán">
+            <h3>Milán</h3>
+            <p>
+                Milán, la capital de la moda, combina historia y modernidad. Visita el Duomo, la Galería Vittorio Emanuele II y el famoso teatro La Scala. Explora las tiendas de lujo y disfruta de la vibrante vida nocturna.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploMilan'">Ver Paquete</button>
+        </div>
+        <div class="destino">
+            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/09/29/16329160099600.jpg" alt="Nápoles">
+            <h3>Nápoles</h3>
+            <p>
+                Nápoles es una ciudad vibrante y llena de vida. Prueba la auténtica pizza napolitana, visita las ruinas de Pompeya y el Monte Vesubio. Explora el centro histórico, declarado Patrimonio de la Humanidad por la UNESCO.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploNapoles'">Ver Paquete</button>
+        </div>
+        <div class="destino">
+            <img src="https://dondealojarse.net/wp-content/uploads/2019/01/messina-730x486.jpg" alt="Sicilia">
+            <h3>Sicilia</h3>
+            <p>
+                Sicilia, la isla más grande del Mediterráneo, ofrece playas paradisíacas, volcanes imponentes y una rica historia. Visita el Monte Etna, explora los templos griegos de Agrigento y disfruta de la gastronomía siciliana.
+            </p>
+            <button onclick="window.location.href='https://www.instagram.com/p/EjemploSicilia'">Ver Paquete</button>
+        </div>
+    </section>
+
+    <div class="sobre-nosotros-button">
+        <button onclick="window.location.href='sobre-nosotros.html'">Conoce más sobre nosotros</button>
+    </div>
+
+    <div class="contacto-button">
+        <button onclick="window.location.href='contacto.html'">Contáctanos</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <span>Sebbuangis</span> Tour. Todos los derechos reservados.</p>
+        <button class="instagram-button" onclick="window.location.href='https://www.instagram.com/sebbuangis_tour?igsh=MTBndTE2OW42MzZ0ag=='">
+            <img src="ig.png" alt="Instagram Logo">
+        </button>
+    </footer>
+
+</body>
+</html>
